@@ -110,3 +110,9 @@ Este agente foi criado com o repositório:
 
 > **"Meu filho nasceu em 30/06/2022. Qual série ele vai cursar em 2026?"**  
 > ➝ O agente responde com idade exata, série recomendada e etapa (ex: Infantil II - Pré-escola).
+
+---
+
+## 🔗 Acesse o agente
+
+🧠 [Clique aqui para acessar o Assistente Educacional de SBC](https://chatgpt.com/g/g-68581c73aa1881918a950bc83a5413e0-educacao-municipal-sbc)
