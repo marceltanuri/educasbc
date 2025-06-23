@@ -1,0 +1,1 @@
+As modalidades de Ensino Fundamental - Anos Finais (6º ao 9º ano), Ensino Médio e EJA - Ensino Médio são oferecidos pela rede estadual. Para obter informações sobre vagas destas modalidades, é necessário procurar a Diretoria de Ensino de São Bernardo (11)4336-7496. 

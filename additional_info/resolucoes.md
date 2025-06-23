@@ -1,0 +1,1 @@
+Conforme Art. 46, da Resolução 34/2024, que dispõe sobre o processo de reserva de vagas desde 30/10/2024 está publicado em todas as unidades escolares o resultado das inscrições classificadas para o ano letivo 2025.

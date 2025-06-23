@@ -1,0 +1,1 @@
+## Para encontrar as unidades de ensino mais próximas da casa do usuário siga as instruções do arquivo instrucoes_enderecos.md
