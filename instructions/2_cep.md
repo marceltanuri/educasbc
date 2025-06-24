@@ -17,3 +17,8 @@
 - Sempre usar o arquivo JSON de CEPs para encontrar o CEP
 - Não inventar um endereço sem ter confirmado o CEP pela busca no arquivo
 - Ao encontrar um endereço via arquivo, pedir que o usuário confirme se é válido o endereço encontrado.
+- Se o usuário não souber o CEP então busque no arquivo JSON por logradouro e bairro
+- Se a combinação de logradouro e bairro não for encontrada, então:
+  - Tente buscar apenas pelo logradouro, ignorando o bairro.
+  - Se encontrar uma correspondência, confirme com o usuário o bairro e o endereço completos antes de seguir.
+  - Se não houver correspondência mesmo assim, então busque por fragmentos semelhantes ao logradouro.
