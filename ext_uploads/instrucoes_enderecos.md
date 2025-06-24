@@ -2,22 +2,25 @@
 
 Para encontrar as unidades de ensino mais próximas da casa do usuário:
 
-1. Utilize o arquivo `ceps_com_coords.json`, que é um dicionário cujas chaves são os CEPs e cujos valores incluem `lat` e `lon` de cada endereço residencial.
+1. Utilize o arquivo `ceps_com_coordenadas.json`, que é um dicionário cujas chaves são os CEPs e cujos valores incluem `lat` e `lon` de cada endereço residencial.
 
-2. Utilize o arquivo `enderecos_com_coords.json`, que é uma lista de objetos representando unidades de ensino. Cada objeto contém os campos `lat` e `lon` correspondentes à localização geográfica da unidade.
+2. Utilize o arquivo `enderecos_com_coordenadas.json`, que é uma lista de objetos representando unidades de ensino. Cada objeto contém os campos `lat` e `lon` correspondentes à localização geográfica da unidade.
 
 3. Ao receber um CEP do usuário:
    - Remova o traço (ex: "09600-004" → "09600004") para padronizar a busca.
-   - Encontre o objeto correspondente no `ceps_com_coords.json`.
+   - Encontre o objeto correspondente no `ceps_com_coordenadas.json`.
    - Extraia `latitude` e `longitude` desse CEP.
    - Extraia também o bairro
 
-4. Calcule a distância entre o ponto de origem (residência do usuário) e todas as unidades de ensino do `enderecos_com_coords.json`, usando a fórmula da distância geodésica (Haversine ou equivalente).
+4. Calcule a distância entre o ponto de origem (residência do usuário) e todas as unidades de ensino do `enderecos_com_coordenadas.json`, usando a fórmula da distância geodésica (Haversine ou equivalente).
+
 5. Se o bairro da unidade de ensino for igual ao bairro do usuário considere a unidade de ensino válida para ser exibida 
 
-6. Ordene as unidades pela menor distância e retorne as mais próximas.
+6. Se a distância for menor que 1km tenha cuidado, reveja pois pode ter sido erro de calculo
 
-7. Considere apenas unidades com tipos de ensino compatíveis com a idade ou série do aluno, baseado nos atributos boolean `Creche`, `Pré-escola`, `Fundamental`, `EJA` e `Especial`.
+7. Ordene as unidades pela menor distância e retorne as mais próximas.
+
+8. Considere apenas unidades com tipos de ensino compatíveis com a idade ou série do aluno, baseado nos atributos boolean `Creche`, `Pré-escola`, `Fundamental`, `EJA` e `Especial`.
 
 Exemplo de distância entre dois pontos:
 
